@@ -14,3 +14,7 @@ app.get('/pet', function (요청, 응답) {
 app.get('/beauty', function (요청, 응답) {
   응답.send('뷰티용품 쇼핑 페이지임');
 });
+
+app.post('/health', function (요청, 응답) {
+  응답.send('헬스 페이지임');
+});
