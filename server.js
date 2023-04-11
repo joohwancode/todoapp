@@ -18,3 +18,7 @@ app.get('/beauty', function (요청, 응답) {
 app.post('/health', function (요청, 응답) {
   응답.send('헬스 페이지임');
 });
+
+app.get('/write',function(요청,응답)){
+  app.sendFile(__dirname+'/write.html')
+}
