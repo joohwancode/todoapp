@@ -21,4 +21,11 @@ app.post('/health', function (요청, 응답) {
 
 app.get('/write',function(요청,응답)){
   app.sendFile(__dirname+'/write.html')
-}
+};
+
+
+app.post('/add',function(요청,응답){
+  응답.send('전송완료')
+  console.log(요청.body.date);
+  console.log(요청.body.title);
+});
